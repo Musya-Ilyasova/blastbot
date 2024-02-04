@@ -1,8 +1,8 @@
-// import from pug
-@import "../pug/components/global/_header";
-@import "../pug/components/global/_footer";
-
 // other
 @import "buttons";
 @import "container";
+@import "block-list";
+@import "yellow-block";
+@import "num-list";
+@import "soc-list";
 @import "../pug/components/modals/_pages";

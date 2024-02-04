@@ -1,0 +1,39 @@
+.footer {
+  background: rgba(#FFFEFB, 0.02);
+  margin-top: 32px;
+  &__top {
+    padding: 32px 0;
+  }
+  &__logo {
+    display: block;
+    width: 162px;
+    height: 22px;
+    font-size: 0;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__copyright {
+    @include mq('768') {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__soc-list {
+    margin-top: 0;
+    display: none;
+    @include mq('768') {
+      display: flex;
+    }
+    .soc-list {
+      &__link:hover .icon{
+        fill: rgba($color: #FFFEFB, $alpha: 1);
+      }
+    }
+    .icon {
+      fill: rgba($color: #FFFEFB, $alpha: 0.6);
+    }
+  }
+}

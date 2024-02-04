@@ -1,0 +1,30 @@
+.soc-list {
+  display: flex;
+  justify-content: center;
+  &__link {
+    display: block;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      .icon {
+        fill: rgba($color: $dark, $alpha: 0.8);
+      }
+    }
+  }
+  &__item {
+    width: 32px;
+    height: 32px;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  .icon {
+    width: 100%;
+    height: 100%;
+    fill: $dark;
+    transition: 0.2s ease-in-out;
+  }
+
+}

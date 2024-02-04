@@ -1,0 +1,6 @@
+.roadmap {
+  padding: 32px 0 16px;
+  @include mq('768') {
+    padding: 56px 0 32px;
+  }
+}

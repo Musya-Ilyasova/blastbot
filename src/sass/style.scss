@@ -2,5 +2,16 @@
 @import "global/libs/libs";
 @import "global/components/components";
 @import "../pug/pages/ui/_ui"; //remove before prod
-@import "../pug/pages/index/_1-screen";
+// import from pug
+@import "../pug/components/global/_header";
 
+
+@import "../pug/pages/index/_1-screen";
+@import "../pug/pages/index/_enhancement";
+@import "../pug/pages/index/_about";
+@import "../pug/pages/index/_benefits";
+@import "../pug/pages/index/_roadmap";
+@import "../pug/pages/index/_social";
+
+
+@import "../pug/components/global/_footer";

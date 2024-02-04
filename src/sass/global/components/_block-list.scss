@@ -1,0 +1,25 @@
+.block-list {
+  display: flex;
+  flex-direction: column;
+  @include mq('768') {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    background: rgba($color: #FFFEFB, $alpha: 0.06);
+    border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 24px;
+    @include mq('768') {
+      width: calc(100% / 2 - 12px);
+      margin-bottom: 24px;
+    }
+
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+}

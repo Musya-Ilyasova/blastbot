@@ -1,0 +1,32 @@
+.yellow-block {
+  width: 100%;
+  border-radius: 12px;
+  color: $dark;
+  padding: 24px;
+  background: linear-gradient(135deg, #FCE303, #FCC503);
+  border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
+
+  &__title {
+    margin-bottom: 24px;
+    color: $dark;
+  }
+  &__text {
+    margin-top: 16px;
+  }
+  &__btn {
+    margin-top: 32px;
+  }
+  &__left {
+    max-width: 715px;
+  }
+  &__right {
+    display: none;
+    @include mq('1024') {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-left: auto;
+    }
+  }
+}

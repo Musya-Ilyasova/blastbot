@@ -1,7 +1,55 @@
 h1 {
   font-size: $font-size-h1;
+  font-family: $font-family-title;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: #FFFEFB;
+  @include mq('768') {
+    font-size: 48px;
+  }
 }
 
 h2 {
   font-size: $font-size-h2;
+  font-family: $font-family-title;
+  color: #FFFEFB;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  @include mq('768') {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
 }
+
+h3 {
+  font-size: $font-size-h3;
+  font-family: $font-family-title;
+  font-weight: 700;
+  line-height: 1.6;
+  position: relative;
+  color: #FFFEFB;
+  @include mq('768') {
+    font-size: 24px;
+  }
+  &:after {
+    content: "";
+    height: 2px;
+    width: 72px;
+    background: $yellow;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+  }
+}
+
+.main {
+  color: $yellow;
+}
+
+b {
+  font-weight: 700;
+}
+

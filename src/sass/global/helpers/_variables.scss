@@ -1,14 +1,17 @@
-$font-family-main: Arial,
-"Times New Roman",
-serif;
+$font-family-title: "Orbitron", sans-serif;
+$font-family-main: "Oxanium", sans-serif;
 //SIZE
 $font-size-main: 16px;
 $font-size-h1: 40px;
-$font-size-h2: 32px;
+$font-size-h2: 24px;
+$font-size-h3: 20px;
 //COLORS
 $black: #000;
 $white: #fff;
+$yellow: #FCE303;
+$dark: #222325;
+$text: #F7F6F3;
 
 $breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
 //width container
-$max-width: 1640px;
+$max-width: 1240px;

@@ -40,7 +40,9 @@
     top: 0;
     &:after {
       background: rgba($color: $dark, $alpha: 0.15);
-      border-radius: 12px;
+      @include mq('768') {
+        border-radius: 12px;
+      }
     }
     @include mq('768') {
       top: 16px;
@@ -94,7 +96,7 @@
       top: calc(50% - 1px);
     }
     &:last-child {
-      top: calc(100% - 4px);
+      top: calc(100% - 5px);
     }
   }
   &_close {
@@ -184,7 +186,7 @@
 
 .menu__bottom {
   margin-top: auto;
-  padding: 0 16px 32px 16px;
+  padding: 0 16px 70px 16px;
   @include mq('768') {
     margin-top: 0;
     padding: 0;

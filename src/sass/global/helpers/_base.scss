@@ -52,7 +52,6 @@ textarea {
   -webkit-overflow-scrolling: touch;
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px #e4f1fd7a;
   }
 }
 
@@ -84,7 +83,6 @@ a {
   color: inherit;
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px #e4f1fd7a;
   }
   &:not([class]) {
     text-decoration-skip-ink: auto;
@@ -96,13 +94,9 @@ button {
   cursor: pointer;
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px #e4f1fd7a;
   }
 }
 
-::selection {
-  background-color: #e4f1fd;
-}
 
 // media for users with vestibular disorders
 @media (prefers-reduced-motion: reduce) {

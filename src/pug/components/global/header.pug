@@ -1,3 +1,39 @@
 //header
 header.header
-  .container
+  .container.header__container
+    a.logo(href="./")
+      +icon('logo')
+    btn.burger Open Menu
+      i
+      i
+      i
+    .menu__wrapper.header__menu
+      nav
+        ul.menu-list
+          li.menu-list__item
+            a.menu-list__link(href="#about") About
+          li.menu-list__item
+            a.menu-list__link(href="#benefits") Features
+          li.menu-list__item
+            a.menu-list__link(href="#token") Token
+          li.menu-list__item
+            a.menu-list__link(href="#roadmap") Roadmap
+          li.menu-list__item
+            a.menu-list__link(href=process.env.DOCS) Docs
+      .menu__bottom
+        ul.soc-list.soc-list_gray.menu__soc-list
+          li.soc-list__item
+            a.soc-list__link(href=process.env.TWITTER target="_blank") twitter
+              +icon('tw')
+          li.soc-list__item
+            a.soc-list__link(href=process.env.TELEGRAM target="_blank") telegram
+              +icon('tg')
+          li.soc-list__item
+            a.soc-list__link(href=process.env.DISCORD target="_blank") discord
+              +icon('dc')
+          li.soc-list__item
+            a.soc-list__link(href=process.env.GITHUB target="_blank") github
+              +icon('gh')
+        a(href="#join").btn.btn_secondary Trade App
+
+

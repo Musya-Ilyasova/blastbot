@@ -25,4 +25,16 @@
 .btn_primary {
   background: $dark;
   color: $white;
+  &:hover, &:focus {
+    background: lighten($color: $dark, $amount: 10%)
+  }
+}
+
+.btn_secondary {
+  background: $yellow;
+  color: $dark;
+
+  &:hover, &:focus {
+    background: darken($color: $yellow, $amount: 10%)
+  }
 }

@@ -1,21 +1,43 @@
 //footer
 footer.footer
-  .container
-    .footer__top
-      a.footer__logo(href="#") Logo BlastBot
-        +icon('logo')
-    .footer__copyright
-      p © 2024 Blastbot. All rights reserved.
-      ul.soc-list.footer__soc-list
-        li.soc-list__item
-          a.soc-list__link(href="#" target="_blank") twitter
-            +icon('tw')
-        li.soc-list__item
-          a.soc-list__link(href="#" target="_blank") telegram
-            +icon('tg')
-        li.soc-list__item
-          a.soc-list__link(href="#" target="_blank") discord
-            +icon('dc')
-        li.soc-list__item
-          a.soc-list__link(href="#" target="_blank") github
-            +icon('gh')
+  .container.footer__container
+    a.footer__logo(href="#") Logo BlastBot
+      +icon('logo')
+    ul.soc-list.soc-list_gray.footer__soc-list
+      li.soc-list__item
+        a.soc-list__link(href=process.env.TWITTER target="_blank") twitter
+          +icon('tw')
+      li.soc-list__item
+        a.soc-list__link(href=process.env.TELEGRAM target="_blank") telegram
+          +icon('tg')
+      li.soc-list__item
+        a.soc-list__link(href=process.env.DISCORD target="_blank") discord
+          +icon('dc')
+      li.soc-list__item
+        a.soc-list__link(href=process.env.GITHUB target="_blank") github
+          +icon('gh')
+    .footer-nav
+      .footer-nav-block
+        span.footer-nav-block__title Product
+        ul.footer-nav-block-list
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#about") About
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#benefits") Features
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#token") Token
+      .footer-nav-block
+        span.footer-nav-block__title Resources
+        ul.footer-nav-block-list
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#roadmap") Roadmap
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#") Docs
+      .footer-nav-block
+        span.footer-nav-block__title Legal
+        ul.footer-nav-block-list
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#") Terms &amp; Conditions
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href="#") Privacy Policy
+    p.copyright © 2024 Blastbot. All rights reserved.

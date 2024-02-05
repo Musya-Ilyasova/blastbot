@@ -26,5 +26,25 @@
     fill: $dark;
     transition: 0.2s ease-in-out;
   }
+  &_gray {
+    .icon {
+      fill: rgba($color: #FFFEFB, $alpha: 0.5);
+    }
+    .soc-list__item {
+      height: 24px;
+      width: 24px;
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
 
+    }
+    .soc-list__link {
+      &:hover {
+        .icon {
+          fill: rgba($color: #FFFEFB, $alpha: 1);
+        }
+      }
+
+    }
+  }
 }

@@ -1,14 +1,193 @@
 .header {
-  width: calc(100% - 40px);
-  max-width: 1280px;
-  margin: 20px auto 0;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  background: rgba($color: #FFFEFB, $alpha: 0.1);
-  border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
-  border-radius: 12px;
-  padding: 26px 0;
+  width: 100%;
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0;
+  height: 100%;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
   height: 80px;
+  z-index: 1000;
+  max-width: 1280px;
+  transition: 0.2s ease-in-out;
+  transition-property: top, background;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  @include mq('768') {
+    background: rgba($color: #FFFEFB, $alpha: 0.1);
+    border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: calc(100% - 40px);
+    max-width: 1280px;
+  }
+  &.scroll {
+    background: rgba($color: #FFFEFB, $alpha: 0.1);
+    border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    top: 0;
+    &:after {
+      background: rgba($color: $dark, $alpha: 0.15);
+      border-radius: 12px;
+    }
+    @include mq('768') {
+      top: 16px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+
+.logo {
+  width: 162px;
+  height: 22px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.burger {
+  font-size: 0;
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  @include mq('768') {
+    display: none;
+  }
+  i {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: $white;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+    &:first-child {
+      top: 4px;
+    }
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+    &:last-child {
+      top: calc(100% - 4px);
+    }
+  }
+  &_close {
+    i {
+      &:first-child {
+        top: calc(50% - 1px);
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        top: calc(50% - 1px);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.menu {
+  &__wrapper {
+    position: fixed;
+    transform: translateX(100%);
+    top: 0px;
+    left: -20px;
+    background: $dark;
+    width: calc(100% + 40px);
+    height: 100vh;
+    padding: 104px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+    overflow-y: auto;
+    &.show {
+      transform: translateX(0);
+    }
+    @include mq('768') {
+      transform: translateX(0);
+      height: 100%;
+      width: calc(100% - 22px -162px);
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      background: transparent;
+      padding: 0;
+      margin-left: 22px;
+    }
+    @include mq('1024') {
+      margin-left: 48px;
+    }
+  }
+  &__soc-list {
+    margin-bottom: 24px;
+    @include mq('768') {
+      display: none;
+    }
+  }
+}
+
+.menu-list {
+  padding: 32px 16px;
+  @include mq('768') {
+    display: flex;
+    padding: 0;
+  }
+  &__link {
+    display: block;
+    padding: 12px 16px;
+    font-size: 16px;
+    transition: background 0.2s ease-in-out;
+    border-radius: 12px;
+    background: transparent;
+    font-weight: 500;
+    @include mq('768') {
+      padding: 12px 14px;
+      margin-right: 4px;
+    }
+    &:hover, &:focus {
+      background: rgba($color: #FFFEFB, $alpha: 0.1);
+      box-shadow: none;
+      @include mq('768') {
+        background: rgba($color: $dark, $alpha: 0.3);
+      }
+    }
+  }
+}
+
+.menu__bottom {
+  margin-top: auto;
+  padding: 0 16px 32px 16px;
+  @include mq('768') {
+    margin-top: 0;
+    padding: 0;
+    margin-left: auto;
+  }
 }

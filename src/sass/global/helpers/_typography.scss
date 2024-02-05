@@ -2,7 +2,7 @@ h1 {
   font-size: $font-size-h1;
   font-family: $font-family-title;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.3;
   text-align: center;
   color: #FFFEFB;
   @include mq('768') {

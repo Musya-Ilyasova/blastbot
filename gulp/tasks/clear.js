@@ -10,4 +10,3 @@ export const clear = (done) => {
 export const clearCache = () => {
   return $.cache.clearAll();
 }
-

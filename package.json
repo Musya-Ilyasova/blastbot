@@ -49,6 +49,7 @@
     "gulp-svg-sprite": ">1.5.0",
     "gulp-svgmin": ">3.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": ">9.0.0",
     "imagemin-pngquant": ">9.0.0",
     "node-sass": "^8.0.0",
@@ -56,6 +57,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "dotenv": "^16.4.1",
     "svg4everybody": "^2.1.9"
   }
 }

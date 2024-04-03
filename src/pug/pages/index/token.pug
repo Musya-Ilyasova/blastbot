@@ -1,20 +1,16 @@
 section.token#token
   .container
-    .yellow-block.token__yellow-block.wow.bounceInUp(data-wow-delay="0.1s")
-      .yellow-block__left
-        h2.yellow-block__title Embark on an exciting journey with Blast Trading Bot
-        p.yellow-block__text Ceated by a team of passionate traders and for traders. Recognizing the vast potential of Blast blockchain, our goal is to become&nbsp;
-          b the fastest, most reliable sniping tool&nbsp;
-          | on Blast for everyone.
-        p.yellow-block__text Introducing our token,&nbsp;
-          b $BB —&nbsp;
-          | more than just a token, it symbolizes unity within our community. By holding $BB, you're part of our collective&nbsp;
-          b journey to success.&nbsp;
-          | Join us in this thrilling venture, where we all share in victories and triumphs.&nbsp;
-          b WAGMI!&nbsp;
-          | (We're all gonna make it!)
-        a(href="#join").btn.btn_primary.yellow-block__btn Trade App
-      .yellow-block__right
+    .main-block.token__main-block.wow.bounceInUp(data-wow-delay="0.1s")
+      .main-block__left
+        h2.main-block__title Embark on an exciting journey with Utopia Bot
+        p.main-block__text Created by team of experienced builders, with a help professional traders. Recognising the vast potential of EVM-chains, our goal is to become the fastest, most reliable trading tool on EVM-chains for every user!
+        p.main-block__text Introducing our token,&nbsp;
+          b $UB —&nbsp;
+          | more than just a token, it symbolizes unity within our community. By holding&nbsp;
+          b $UB,&nbsp;
+          | you're part of our collective journey to success. Join us in this thrilling adventure, where we all share in victories and triumphs. WAGMI!
+        a(href="#join").btn.btn_primary.main-block__btn Trade App
+      .main-block__right
         ul.soc-list.token__soc-list
           li.soc-list__item
             a.soc-list__link(href=process.env.TWITTER target="_blank") twitter
@@ -22,12 +18,5 @@ section.token#token
           li.soc-list__item
             a.soc-list__link(href=process.env.TELEGRAM target="_blank") telegram
               +icon('tg')
-          li.soc-list__item
-            a.soc-list__link(href=process.env.DISCORD target="_blank") discord
-              +icon('dc')
-          li.soc-list__item
-            a.soc-list__link(href=process.env.GITHUB target="_blank") github
-              +icon('gh')
         a.token__logo(href="./")
-          +icon('logo-black')
-
+          img(src="./img/logo-black.svg", alt="Utopia Bot Logo")

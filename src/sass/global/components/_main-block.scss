@@ -1,10 +1,10 @@
-.yellow-block {
+.main-block {
   width: 100%;
   border-radius: 12px;
   color: $dark;
   padding: 24px;
-  background: linear-gradient(135deg, #FCE303, #FCC503);
-  border: 1px solid rgba($color: #FFFEFB, $alpha: 0.03);
+  background: linear-gradient(135deg, $lightOrange, $darkOrange);
+  border: none;
 
   &__title {
     margin-bottom: 24px;

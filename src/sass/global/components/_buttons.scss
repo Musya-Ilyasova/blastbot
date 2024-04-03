@@ -15,7 +15,7 @@
   padding: 0 15px;
   font-size: 16px;
   @include mq('768') {
-    width: 108px;
+    width: 147px;
   }
   &:focus {
     box-shadow: none;
@@ -31,10 +31,10 @@
 }
 
 .btn_secondary {
-  background: $yellow;
-  color: $dark;
+  background: $main;
+  color: $white;
 
   &:hover, &:focus {
-    background: darken($color: $yellow, $amount: 10%)
+    background: darken($color: $main, $amount: 10%)
   }
 }

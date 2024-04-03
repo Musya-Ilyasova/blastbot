@@ -1,8 +1,8 @@
 section.social#join
   .container
-    .yellow-block.social__yellow-block.wow.bounceInUp(data-wow-delay="0.1s")
-      h2.yellow-block__title Stay tuned for additional features and exciting updates
-      p.yellow-block__text to make your contribution even more rewarding!
+    .main-block.social__main-block.wow.bounceInUp(data-wow-delay="0.1s")
+      h2.main-block__title Stay tuned for additional features and exciting updates
+      p.main-block__text to make your contribution even more rewarding!
       ul.soc-list.social__soc-list
         li.soc-list__item
           a.soc-list__link(href=process.env.TWITTER target="_blank") twitter
@@ -10,9 +10,3 @@ section.social#join
         li.soc-list__item
           a.soc-list__link(href=process.env.TELEGRAM target="_blank") telegram
             +icon('tg')
-        li.soc-list__item
-          a.soc-list__link(href=process.env.DISCORD target="_blank") discord
-            +icon('dc')
-        li.soc-list__item
-          a.soc-list__link(href=process.env.GITHUB target="_blank") github
-            +icon('gh')

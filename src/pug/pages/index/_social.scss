@@ -4,8 +4,8 @@
   &__soc-list {
     margin-top: 24px;
   }
-  &__yellow-block {
-    .yellow-block {
+  &__main-block {
+    .main-block {
       &__title {
         margin-bottom: 8px;
         @include mq('768') {

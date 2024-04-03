@@ -2,7 +2,7 @@
 footer.footer
   .container.footer__container
     a.footer__logo(href="#") Logo BlastBot
-      +icon('logo')
+      img(src="./img/logo.svg", alt="Utopia Bot")
     ul.soc-list.soc-list_gray.footer__soc-list
       li.soc-list__item
         a.soc-list__link(href=process.env.TWITTER target="_blank") twitter
@@ -10,12 +10,6 @@ footer.footer
       li.soc-list__item
         a.soc-list__link(href=process.env.TELEGRAM target="_blank") telegram
           +icon('tg')
-      li.soc-list__item
-        a.soc-list__link(href=process.env.DISCORD target="_blank") discord
-          +icon('dc')
-      li.soc-list__item
-        a.soc-list__link(href=process.env.GITHUB target="_blank") github
-          +icon('gh')
     .footer-nav
       .footer-nav-block
         span.footer-nav-block__title Product
@@ -26,6 +20,10 @@ footer.footer
             a.footer-nav-block-list__link(href="#benefits") Features
           li.footer-nav-block-list__item
             a.footer-nav-block-list__link(href="#token") Token
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href=process.env.LEADERBOARD) Leaderboard
+          li.footer-nav-block-list__item
+            a.footer-nav-block-list__link(href=process.env.REFERRAL) Referral
       .footer-nav-block
         span.footer-nav-block__title Resources
         ul.footer-nav-block-list

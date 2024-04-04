@@ -13,8 +13,12 @@ $lightOrange: #FFA800;
 $darkOrange: #FF7A00;
 $dark: #222325;
 $text: #F7F6F3;
+$darkgray: #262729;
+$lightgray: #2F3032;
+$green: #1DB954;
+$red: #D64040;
 $main: $orange;
 
-$breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
+$breakpoints: ("320": 320px,"375": 375px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
 //width container
 $max-width: 1240px;

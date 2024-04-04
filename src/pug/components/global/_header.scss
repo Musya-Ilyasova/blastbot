@@ -198,7 +198,14 @@
       background: rgba($color: #FFFEFB, $alpha: 0.1);
       box-shadow: none;
       @include mq('1024') {
-        background: rgba($color: $dark, $alpha: 0.3);
+        color: $main;
+        background: transparent;
+      }
+    }
+    &.active {
+      @include mq('1024') {
+        color: $main;
+        background: transparent;
       }
     }
   }
